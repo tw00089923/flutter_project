@@ -15,7 +15,6 @@
  # Flutter run 
 ```
 
-
 <img src="https://flutter.io/images/flutter-starter-app-android.png" width="500">
 ## 2.Flutter Architecture
 ![flutter architecture](https://cdn-images-1.medium.com/max/1600/0*NeeJq8PwkiTj8eMf.)
@@ -29,6 +28,8 @@
 
 
 
+## 小技巧 
+1. 截圖：在terminal上  按下 S
 
 ## Note . 注意事項
 有Row || Column 請使用crossAxisAlignment ,mainAxisAlignment 調整空間及佈局
