@@ -3,7 +3,7 @@
 [documentation](https://flutter.io/).
 ## 1. 安裝設置環境變數
 將 下載好的[development](https://storage.googleapis.com/flutter_infra/releases/beta/macos/flutter_macos_v0.5.1-beta.zip) 解壓縮檔案設置環境變數
-
+'''
 > $ export PATH=/Users/tw00089923/development/flutter/bin:$PATH
  測試環境
 > $ flutter doctor  
@@ -11,6 +11,7 @@
 > $ flutter create myapp
  開啟模擬器
 > $ open -a Simulator.app
+'''
  顯示圖片
 ***  
 ![flutter](https://flutter.io/images/flutter-starter-app-android.png)
