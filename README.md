@@ -11,9 +11,9 @@
  $ flutter create myapp
  開啟模擬器
  $ open -a Simulator.app
- Flutter run 即可顯示
- ![flutter](https://flutter.io/images/flutter-starter-app-android.png)
+ Flutter run 
 ```
+![flutter](https://flutter.io/images/flutter-starter-app-android.png)
 ## 2.Flutter Architecture
 ![flutter architecture](https://cdn-images-1.medium.com/max/1600/0*NeeJq8PwkiTj8eMf.)
 使用 animation, 請注意使用animation widget 不然就是編寫Animation builder [animation](https://flutter.io/tutorials/animation/)
