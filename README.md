@@ -12,6 +12,7 @@
  開啟模擬器
 > $ open -a Simulator.app
  顯示圖片
+***  
 ![flutter](https://flutter.io/images/flutter-starter-app-android.png)
 
 ## 2.Flutter Architecture
