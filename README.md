@@ -1,6 +1,6 @@
 # Flutter project.
 [documentation](https://flutter.io/)
-***
+
 ## 1. 安裝設置環境變數
 將 下載好的[development](https://storage.googleapis.com/flutter_infra/releases/beta/macos/flutter_macos_v0.5.1-beta.zip) 解壓縮檔案設置環境變數
 
@@ -11,10 +11,9 @@
 * $ flutter create myapp
 * 開啟模擬器
 * $ open -a Simulator.app
-
 * Flutter run 即可顯示
-![flutter](https://flutter.io/images/flutter-starter-app-android.png)
-*** 
+* ![flutter](https://flutter.io/images/flutter-starter-app-android.png)
+
 ## 2.Flutter Architecture
 ![flutter architecture](https://cdn-images-1.medium.com/max/1600/0*NeeJq8PwkiTj8eMf.)
 使用 animation, 請注意使用animation widget 不然就是編寫Animation builder [animation](https://flutter.io/tutorials/animation/)
