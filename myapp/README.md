@@ -31,7 +31,7 @@
 a. [Shared preferences plugin](https://github.com/flutter/plugins/tree/master/packages/shared_preferences)
 
 b. [dbcrypt](https://pub.dartlang.org/packages/dbcrypt)
-c.
+
 
 
 
@@ -42,6 +42,7 @@ c.
 - [ios]()
 
 - [android](https://flutter.io/android-release/)
+```
 --- process ---
 A. Review the App Manifest [ 修改 Android Manifest  ]
 B. Review the build configuration [修改 Configuration ]
@@ -52,7 +53,7 @@ F. Building a release APK
 G. Installing a release APK on a device
 H. Publishing an APK to the Google Play Store
 ---
-
+```
 A. Review the App Manifest
 ```
     open [路徑] /android/app/src/main/AndroidManifest.xml 修改
