@@ -40,7 +40,7 @@ c.
 - fastlane
 
 - [ios]()
-```
+
 - [android](https://flutter.io/android-release/)
 --- process ---
 A. Review the App Manifest [ 修改 Android Manifest  ]
