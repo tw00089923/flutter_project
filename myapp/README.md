@@ -54,36 +54,41 @@ H. Publishing an APK to the Google Play Store
 ---
 
 A. Review the App Manifest
+```
     open [路徑] /android/app/src/main/AndroidManifest.xml 修改
     1. application
     2. uses-permission
+```
 B. Review the build configuration 
+```
     open Config [路徑]/android/app/build.gradle  修改 defaultConfig
         1. applicationId
         2. versionCode & versionName
         3. minSdkVersion & targetSdkVersion
+```
 C. Adding a Launcher icon
+```
     1. Icon[Spec.]](https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html)
 
     2. [路徑]/android/app/src/main/res/mipmap- 會發現好幾種規格需要更改
     3. [路徑]/android/app/src/main/AndroidManifest.xml 找到<application android:icon="@mipmap/ic_launcher" 去更改的格式
     4. 以上更新完過 $ flutter run 
-
+```
 D. Signing the app
+```
     ---process---
     產生RSA key -> 修改文檔加入RSA key -> 代碼混淆及極小化
 
     1. keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
     Note: Keep this file private; do not check it into public source control.
     2. 接著創建 [路徑]/android/key.properties   此檔案請保留
-    ```
+
     storePassword=<password from previous step>
     keyPassword=<password from previous step>
     keyAlias=key
     storeFile=<location of the key store file, e.g. /Users/<user name>/key.jks>
 
     Note: Keep this file private; do not check it into public source control.
-    ```
     3. [路徑]/android/app/build.gradle
     變更 android {
     ---
@@ -116,7 +121,9 @@ D. Signing the app
             signingConfig signingConfigs.release
         }
     }
+```
 D. Enabling Proguard 
+```
   在flutter 內並不會使[代碼混淆obfuscate](https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%A0%81%E6%B7%B7%E6%B7%86) 及 [極小化minify](https://zh.wikipedia.org/wiki/%E6%A5%B5%E7%B0%A1%E5%8C%96)
     1. Step 1 - Configure Proguard 
         Create /android/app/proguard-rules.pro file and add rules listed below.
